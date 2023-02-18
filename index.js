@@ -4,8 +4,15 @@ document.getElementById("blog-btn").addEventListener("click", function () {
 // question page location setup
 document.getElementById("trangle-btn").addEventListener("click", function () {
   const triangleB = getInputValue("triangle-input-one");
+  if (isNaN(triangleB)) {
+    alert("Please enter a number");
+    return;
+  }
   const triangleH = getInputValue("triangle-input-two");
-
+  if (isNaN(triangleH)) {
+    alert("Please enter a number");
+    return;
+  }
   const oneGeomatriName = getInnerText("triangle-name");
 
   const area = 0.5 * triangleB * triangleH;
@@ -24,7 +31,15 @@ document.getElementById("trangle-btn").addEventListener("click", function () {
 // Triangle area here
 document.getElementById("rectangle-btn").addEventListener("click", function () {
   const rectangleInputAValue = getInputValue("rectangle-input-one");
+  if (isNaN(rectangleInputAValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const rectangleInputBValue = getInputValue("rectangle-input-two");
+  if (isNaN(rectangleInputBValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const twoGeomatriName = getInnerText("rectangle-name");
   const area = rectangleInputAValue * rectangleInputBValue;
 
@@ -43,7 +58,15 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
 });
 document.getElementById("parallelo-btn").addEventListener("click", function () {
   const rectangleInputAValue = getInputValue("parallelo-iput-one");
+  if (isNaN(rectangleInputAValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const rectangleInputBValue = getInputValue("parallelo-iput-two");
+  if (isNaN(rectangleInputBValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const threeGeomatriName = getInnerText("parallelo-name");
   const area = rectangleInputAValue * rectangleInputBValue;
   //
@@ -61,7 +84,15 @@ document.getElementById("parallelo-btn").addEventListener("click", function () {
 });
 document.getElementById("rhombus-btn").addEventListener("click", function () {
   const rectangleInputAValue = getInputValue("rhombus-input-one");
+  if (isNaN(rectangleInputAValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const rectangleInputBValue = getInputValue("rhombus-input-two");
+  if (isNaN(rectangleInputBValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const foureGeomatriName = getInnerText("rhombus-Name");
   const area = (rectangleInputAValue * rectangleInputBValue) / 2;
   //
@@ -79,7 +110,15 @@ document.getElementById("rhombus-btn").addEventListener("click", function () {
 });
 document.getElementById("pentagon-btn").addEventListener("click", function () {
   const rectangleInputAValue = getInputValue("pentagon-input-one");
+  if (isNaN(rectangleInputAValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const rectangleInputBValue = getInputValue("pentagon-input-two");
+  if (isNaN(rectangleInputBValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const fiveGeomatriName = getInnerText("pentagon-name");
   const area = 0.5 * rectangleInputAValue * rectangleInputBValue;
   //
@@ -97,7 +136,15 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
 });
 document.getElementById("ellipse-btn").addEventListener("click", function () {
   const rectangleInputAValue = getInputValue("ellipse-input-one");
+  if (isNaN(rectangleInputAValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const rectangleInputBValue = getInputValue("ellipse-input-two");
+  if (isNaN(rectangleInputBValue)) {
+    alert("Please enter a number");
+    return;
+  }
   const sixGemomatriName = getInnerText("ellipse-name");
   const area = 3.14159265359 * rectangleInputAValue * rectangleInputBValue;
   //
