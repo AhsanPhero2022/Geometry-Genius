@@ -43,7 +43,6 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
   const twoGeomatriName = getInnerText("rectangle-name");
   const area = rectangleInputAValue * rectangleInputBValue;
 
-  //
   const tofix = area.toFixed(2);
 
   const container = document.getElementById("table-container");
@@ -55,6 +54,7 @@ document.getElementById("rectangle-btn").addEventListener("click", function () {
   <td><bitton class="btn btn-info">convert</button></td>
   `;
   container.appendChild(tr);
+  // rectangle here
 });
 document.getElementById("parallelo-btn").addEventListener("click", function () {
   const rectangleInputAValue = getInputValue("parallelo-iput-one");
@@ -121,7 +121,7 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
   }
   const fiveGeomatriName = getInnerText("pentagon-name");
   const area = 0.5 * rectangleInputAValue * rectangleInputBValue;
-  //
+
   const tofix = area.toFixed(2);
 
   const container = document.getElementById("table-container");
@@ -134,6 +134,7 @@ document.getElementById("pentagon-btn").addEventListener("click", function () {
   `;
   container.appendChild(tr);
 });
+// rectangle here
 document.getElementById("ellipse-btn").addEventListener("click", function () {
   const rectangleInputAValue = getInputValue("ellipse-input-one");
   if (isNaN(rectangleInputAValue)) {
@@ -147,7 +148,7 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   }
   const sixGemomatriName = getInnerText("ellipse-name");
   const area = 3.14159265359 * rectangleInputAValue * rectangleInputBValue;
-  //
+
   const tofix = area.toFixed(2);
 
   const container = document.getElementById("table-container");
@@ -160,6 +161,7 @@ document.getElementById("ellipse-btn").addEventListener("click", function () {
   `;
   container.appendChild(tr);
 });
+//
 
 function getInputValue(id) {
   const valueStr = document.getElementById(id).value;
@@ -176,6 +178,7 @@ function randomColor(input) {
   const firstCard = document.getElementById(input);
   firstCard.style.backgroundColor =
     "#" + (((1 << 22) * Math.random()) | 0).toString(14).padStart(6, "0");
+  // random input here
 }
 document
   .getElementById("first-card")
