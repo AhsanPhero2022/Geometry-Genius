@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-5</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <div>
+        <h2 class="text-3xl">Interactive</h2>
+        <p>Geometry Genius</p>
+      </div>
+      <div><button id="blog-btn" class="rounded btn-info px-8  py-2">Blog</button></div>
+    </div>
+  </header>
+  <main>
+    <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+      <div class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- first card  -->
+        <div id="card-body" class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full h-40 p-8" src="./images/triangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-3xl text-center">Triangle</h2>
+            <p class="text-center">
+              Area (A) =
+              0.5 b
+              h
+            </p>
+            <div class="mb-5 flex gap-1 justify-center items-center">
+              <input id="triangle-inputB" class="input input-bordered input-sm w-16" placeholder="b" type="text">
+              <p>cm</p>
+              <input id="triangle-inputH" class="input input-bordered input-sm w-16" placeholder="h" type="text">
+              <p>cm</p>
+            </div>
+            <div class="card-actions justify-center">
+              <button id="trangle-btn" class="mb-3 px-16 py-2 rounded btn-info">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- second card  -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full h-40 p-8" src="./images/rectangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-3xl text-center">Rectangle</h2>
+            <p class="text-center">
+              Area (A) = w * I
+            </p>
+            <div class="mb-5 flex gap-1 justify-center items-center">
+              <input class="input input-bordered input-sm w-16" placeholder="w" type="text">
+              <p>cm</p>
+              <input class="input input-bordered input-sm w-16" placeholder="I" type="text">
+              <p>cm</p>
+            </div>
+            <div class="card-actions justify-center">
+              <button class="mb-3 px-16 py-2 rounded btn-info">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- third card  -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full h-40 p-8" src="./images/parallelogram.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-3xl text-center px-2">Parallelogram</h2>
+            <p class="text-center">
+              Area (A) = b h
+            </p>
+            <p class="text-center">b=10cm, h=12cm
+            <div class="card-actions justify-center">
+              <button class="mb-3 px-16 py-2 rounded btn-info" id="third-card">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- fourth card  -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full h-40 p-8" src="./images/rhombus.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-3xl text-center">Rectangle</h2>
+            <p class="text-center">
+              Area (A) =
+              0.5
+              d
+              1
+              d
+              2
+            </p>
+            <p class="text-center">d
+              1
+              = 16cm
+              d
+              2
+              = 8cm</p>
+
+            <div class="card-actions justify-center">
+              <button class="mb-3 px-16 py-2 rounded btn-info">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- fift card -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full h-40 p-8" src="./images/pentagon.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-3xl text-center">Pentagon</h2>
+            <p class="text-center">
+              Area (A) =
+              0.5 p
+              b
+            </p>
+            <p class="text-center">p = 6cm, b = 10cm</p>
+
+            <div class="card-actions justify-center">
+              <button class="mb-3 px-16 py-2 rounded btn-info" id="second-last">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- last card  -->
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+          <figure>
+            <img class="w-full h-40 p-8" src="./images/ellipse.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="text-3xl text-center">Pentagon</h2>
+            <p class="text-center">
+              Area (A) = ab
+            </p>
+            <p class="text-center">a = 10cm, b = 4cm</p>
+
+
+            <div class="card-actions justify-center">
+              <button class="mb-3 px-16 py-2 rounded btn-info" id="last-card">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cart details div  -->
+      <div class="cart-details w-full md:w-[40%] lg:w-[40%] mx-auto">
+        <h1 class="text-3xl text-center font-bold underline mt-5">
+          Area Calculation
+        </h1>
+        <div class="overflow-x-auto">
+          <table class="table w-full">
+            <tbody id="table-container">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

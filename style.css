@@ -1,0 +1,13 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: cadetblue;
+  border-radius: 8px;
+  height: 80px;
+  align-items: center;
+}
+.header {
+  padding: 30px;
+}
