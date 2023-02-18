@@ -171,3 +171,40 @@ function getInnerText(id) {
   const innerText = document.getElementById(id).innerText;
   return innerText;
 }
+
+function randomColor(input) {
+  const firstCard = document.getElementById(input);
+  firstCard.style.backgroundColor =
+    "#" + (((1 << 24) * Math.random()) | 0).toString(16).padStart(6, "0");
+}
+document
+  .getElementById("first-card")
+  .addEventListener("mouseenter", function () {
+    randomColor("first-card");
+  });
+
+document
+  .getElementById("second-card")
+  .addEventListener("mouseenter", function () {
+    randomColor("second-card");
+  });
+document
+  .getElementById("third-card")
+  .addEventListener("mouseenter", function () {
+    randomColor("third-card");
+  });
+document
+  .getElementById("fourth-card")
+  .addEventListener("mouseenter", function () {
+    randomColor("fourth-card");
+  });
+document
+  .getElementById("five-card")
+  .addEventListener("mouseenter", function () {
+    randomColor("five-card");
+  });
+document.getElementById("six-card").addEventListener("mouseenter", function () {
+  randomColor("six-card");
+});
+
+// random color
